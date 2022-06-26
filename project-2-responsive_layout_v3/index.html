@@ -5,28 +5,30 @@
     <title>Responsive Layout</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Roboto:wght@300&display=swap" rel="stylesheet"> 
  </head>
  
  <body>
- <header>
-	<nav>
-		<h1>STUDENT NAME</h1>
-		<ul class="nav">
-			<li><a href="#top">HOME</a></li>
-			<li><a href="#portfolio">PORTFOLIO</a></li>
-			<li><a href="#skills">SKILLS</a></li>
-			<li><a href="#contact">CONTACT</a></li>
-		</ul>
-	</nav>
-	<div class="banner">
-		<img class="profile_pic" src="images/responsive-layout-profile.png" alt="Drawing of responsive layout profile picture.">
-		<p class="profile_p">Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
-	</div>
- </header>
+	<header>
+		<nav class= "top_nav_flex">
+			<h1>STUDENT NAME</h1>
+			<ul class="nav">
+				<li><a href="#top">HOME</a></li>
+				<li><a href="#skills">SKILLS</a></li>
+				<li><a href="#portfolio">PORTFOLIO</a></li>
+				<li><a href="#contact">CONTACT</a></li>
+			</ul>
+		</nav>
+		<div class="banner">
+			<img class="profile_pic" src="images/responsive-layout-profile.png" alt="Drawing of responsive layout profile picture.">
+			<p class="profile_p">Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
+		</div>
+	</header>
 	
 	<main>
-		<h3 class="spacing" id="skills">SKILLS</h3>
+		<h3 id="skills">⇀ SKILLS ↼</h3>
 		 <ul class="skills_container">
 		  <li>HTML</li>
 		  <li>CSS</li>
@@ -34,7 +36,7 @@
 		  <li>DANCE FAST</li>
 		 </ul>
 	
-	    <h3 class="spacing" id="portfolio">PORTFOLIO</h3>
+	    <h3 id="portfolio">⇀ PORTFOLIO ↼</h3>
 		<div class="flex_container">
 			
 			<div class= "con_1">
@@ -70,29 +72,31 @@
 		</div>
 	</main>
 	
-	<footer id="contact">
-			<h2>CONTACT</h2>
-			<p class="contact_p">If you're interested in chatting or want more information about what I've been workinh on, I'd love to hear from you!</p>
+	<footer>
+	    <div class= "contact_info">
+			<h2 id="contact">CONTACT</h2>
+			<p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
 			<h4>Phone +1(111)555-1234</h4>
 			<h4>Email email@yoursite.com</h4>
+		</div>
 		<hr />
 		<div class="footer_nav_small">
-		<ul class= "col_2">
-		<li>STUDENT NAME</li>
-		<li><a href="#top">BACK TO TOP</a></li>
+		<h4>Student Name</h4>
+		<ul class= "nav_2">
+			<li><a href="#top">BACK TO TOP</a></li>
 		</ul>
 		</div>
 		<div class="footer_nav_large">
-		<nav>
-		  <ul class= "col_2">
-		    <li class="move">STUDENT NAME</li>
-			<li><a href="#top">HOME</a></li>
-			<li><a href="#portfolio">PORTFOLIO</a></li>
-			<li><a href="#skills">SKILLS</a></li>
-			<li><a href="#contact">CONTACT</a></li>
+		<nav class="footer_nav_flex">
+		 <h4>Student Name</h4>
+		  <ul class= "nav_3">
+			<li class= "flex_baby"><a href="#top">HOME</a></li>
+			<li class= "flex_baby"><a href="#skills">SKILLS</a></li>
+			<li class= "flex_baby"><a href="#portfolio">PORTFOLIO</a></li>
+			<li class= "flex_baby"><a href="#contact">CONTACT</a></li>
 		  </ul>
-	</nav>
-	</div>
+		</nav>
+		</div>
 	</footer>
  </body>
 </html>
